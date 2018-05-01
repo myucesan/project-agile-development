@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements BluetoothSerialLi
     }
 
     public void onClickSend(View view) {
-        bluetoothSerial.write("test", false);
+        bluetoothSerial.write("makeBearSound", false);
     }
 
     public void onClickConnect(View view) {

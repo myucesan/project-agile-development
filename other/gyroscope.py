@@ -5,7 +5,7 @@ import time
 import pygame
 
 pygame.mixer.init()
-pygame.mixer.music.load("bear.wav")
+pygame.mixer.music.load("/home/pi/Workspace/path-agile-development/other/bear.wav")
 
 # Register
 power_mgmt_1 = 0x6b

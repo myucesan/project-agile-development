@@ -71,3 +71,4 @@ while True:
 
     if x_value > 10:
 	pygame.mixer.music.play()
+	time.sleep(5)

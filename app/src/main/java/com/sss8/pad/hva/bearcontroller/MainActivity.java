@@ -142,8 +142,36 @@ public class MainActivity extends AppCompatActivity implements BluetoothSerialLi
         bluetoothSerial.connect(device);
     }
 
-    public void onClickSend(View view) {
+    public void makeBearSound(View view) {
         bluetoothSerial.write("makeBearSound", false);
+    }
+
+    public void makeKissesSound(View view) {
+        bluetoothSerial.write("makeKissesSound");
+    }
+
+    public void makeGreetingSound(View view) {
+        bluetoothSerial.write("makeGreetingSound");
+    }
+
+    public void makeLaughSound(View view) {
+        bluetoothSerial.write("makeLaughSound");
+    }
+
+    public void makeSecretSound(View view) {
+        bluetoothSerial.write("makeSecretSound");
+    }
+
+    public void makeSorrySound(View view) {
+        bluetoothSerial.write("makeSorrySound");
+    }
+
+    public void makeWoohooSound(View view) {
+        bluetoothSerial.write("makeWoohooSound");
+    }
+
+    public void makeWowSound(View view) {
+        bluetoothSerial.write("makeWowSound");
     }
 
     public void onClickConnect(View view) {

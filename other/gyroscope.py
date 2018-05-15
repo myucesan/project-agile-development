@@ -5,7 +5,7 @@ import time
 import pygame
 
 pygame.mixer.init()
-pygame.mixer.music.load("bear.wav")
+sound1 = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/bear.wav")
 
 # Register
 power_mgmt_1 = 0x6b
@@ -70,4 +70,5 @@ while True:
     print y_value
 
     if x_value > 10:
-	pygame.mixer.music.play()
+	sound1.play()
+	time.sleep(5)

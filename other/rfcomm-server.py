@@ -40,6 +40,12 @@ try:
           greetingSound.play()
         else if data == "makeKissesSound":
           kissesSound.play()
+        else if data == "makeLaughSound":
+          laughSound.play()
+        else if data == "makeSecretSound":
+          secretSound.play()
+        else if data == "makeSorrySound":
+          sorrySound.play()
 except IOError:
     pass
 

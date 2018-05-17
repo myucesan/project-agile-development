@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements BluetoothSerialLi
 
     public void makeBearSound(View view) {
         bluetoothSerial.write("makeBearSound", false);
+        view.findViewById(R.id.imageView11).setVisibility(View.VISIBLE);
     }
 
     public void makeGreetingSound(View view) {

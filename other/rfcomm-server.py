@@ -2,7 +2,12 @@ from bluetooth import *
 import pygame
 
 pygame.mixer.init()
-pygame.mixer.music.load("bear.wav")
+bearSound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/bear.wav")
+greetingSound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/greeting.wav")
+kissesSound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/kisses.wav")
+laughSound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/laugh.wav")
+secretSound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/secret.wav")
+sorrySound = pygame.mixer.Sound("/home/pi/Workspace/path-agile-development/other/sorry.wav")
 
 server_sock=BluetoothSocket( RFCOMM )
 server_sock.bind(("",PORT_ANY))
@@ -30,7 +35,17 @@ try:
         if len(data) == 0: break
         print("received [%s]" % data)
         if data == "makeBearSound":
-          pygame.mixer.music.play()
+          bearSound.play()
+        else if data == "makeGreetingSound":
+          greetingSound.play()
+        else if data == "makeKissesSound":
+          kissesSound.play()
+        else if data == "makeLaughSound":
+          laughSound.play()
+        else if data == "makeSecretSound":
+          secretSound.play()
+        else if data == "makeSorrySound":
+          sorrySound.play()
 except IOError:
     pass
 

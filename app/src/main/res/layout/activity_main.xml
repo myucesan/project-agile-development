@@ -36,20 +36,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.265" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="122dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="100dp"
-        android:onClick="onClickSend"
-        android:text="Sound 5"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
 
     <Button
         android:id="@+id/button6"
@@ -60,11 +46,11 @@
         android:text="Greeting"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintVertical_bias="0.477" />
 
     <Button
         android:id="@+id/button5"
@@ -111,15 +97,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.693" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="226dp" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="364dp"
@@ -135,69 +112,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.13" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="226dp" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="321dp" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="321dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="413dp" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="48dp"
-        android:layout_height="45dp"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/presence_audio_online"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="413dp" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Welcome to the teddybear app. If you're not connected press the button below!"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="447dp"
+        android:layout_width="324dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Play any sound by pressing the buttons!"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.007" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+
+    y_value = get_y_rotation(acceleration_xout_scaling, acceleration_yout_scali$
+
+    print x_value
+    print y_value
+    try:       if x_value > 10:
+            GPIO.output(16, 1)
+
+            sound1.play()
+            time.sleep(1)
+            GPIO.output(16, 0)
+    except KeyboardInter

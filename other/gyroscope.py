@@ -70,6 +70,8 @@ while True:
     print x_value
     print y_value
 
-    if x_value > 10:
-	wohoo.play()
+    if x_value > 10 && x_value < 20:
+	    wohoo.play()
+	elif x_value > -20 && x_value < 10:
+	    wow.play()
 	time.sleep(5)

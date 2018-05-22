@@ -82,8 +82,10 @@ while True:
     try:
         if x_value > 10:
             GPIO.output(16, 1)
-            sound1.play()
             time.sleep(1)
             GPIO.output(16, 0)
+            sound1.play()
+            time.sleep(1)
+
     except KeyboardInterrupt:
         GPIO.cleanup()

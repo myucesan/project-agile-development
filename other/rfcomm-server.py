@@ -36,15 +36,15 @@ try:
         print("received [%s]" % data)
         if data == "makeBearSound":
           bearSound.play()
-        else if data == "makeGreetingSound":
+        elif data == "makeGreetingSound":
           greetingSound.play()
-        else if data == "makeKissesSound":
+        elif data == "makeKissesSound":
           kissesSound.play()
-        else if data == "makeLaughSound":
+        elif data == "makeLaughSound":
           laughSound.play()
-        else if data == "makeSecretSound":
+        elif data == "makeSecretSound":
           secretSound.play()
-        else if data == "makeSorrySound":
+        elif data == "makeSorrySound":
           sorrySound.play()
 except IOError:
     pass

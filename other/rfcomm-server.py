@@ -24,13 +24,12 @@ advertise_service( server_sock, "SampleServer",
                    #protocols = [ OBEX_UUID ]
                    )
 
-print("Waiting for connection on RFCOMM channel %d" % port)
+while True:
+    print("Waiting for connection on RFCOMM channel %d" % port)
+    client_sock, client_info = server_sock.accept()
+    print("Accepted connection from ", client_info)
 
-client_sock, client_info = server_sock.accept()
-print("Accepted connection from ", client_info)
-
-try:
-    while True:
+    try:
         data = client_sock.recv(1024)
         if len(data) == 0: break
         print("received [%s]" % data)
@@ -46,11 +45,20 @@ try:
           secretSound.play()
         elif data == "makeSorrySound":
           sorrySound.play()
-except IOError:
-    pass
+    except IOError:
+        pass
+    except KeyboardInterrupt:
 
-print("disconnected")
+        print "disconnected"
 
-client_sock.close()
-server_sock.close()
-print("all done")
+        client_sock.close()
+        server_sock.close()
+        print "all done"
+
+        break
+
+# print("disconnected")
+#
+# client_sock.close()
+# server_sock.close()
+# print("all done")

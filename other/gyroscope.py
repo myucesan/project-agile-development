@@ -39,10 +39,9 @@ def get_x_rotation(x,y,z):
     radians = math.atan2(y, dist(x,z))
     return math.degrees(radians)
 
-bus = smbus.SMBus(1) # bus = smbus.SMBus(0) fuer Revision 1
-address = 0x68       # via i2cdetect
+bus = smbus.SMBus(1)
+address = 0x68
 
-# Aktivieren, um das Modul ansprechen zu koennen
 bus.write_byte_data(address, power_mgmt_1, 0)
 
 print "gyroscope"
